@@ -38,13 +38,13 @@ public class RedisOnlyServiceImpl implements UserService {
     @Cacheable(cacheNames="user", key="#username")
     @Override
     public User selectByUserName(String username) {
-        return null;
+        return null;//?
     }
 
 
     @Override
     public List<User> selectAll() {
-        return null;
+        return null;//?
     }
 
     @CachePut(cacheNames="user", key="#user.id")
